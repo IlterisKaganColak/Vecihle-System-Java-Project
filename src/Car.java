@@ -2,14 +2,16 @@ public class Car extends Vecihle{
 
     private int wheels;
     private String type;
+    private String color;
     private int doors;
     private int gears;
     private boolean isManuel;
     private int currentGear;
 
-    public Car(String name, int wheels, int doors, int gears, boolean isManuel, String type) {
+    public Car(String name, int wheels, int doors, int gears, boolean isManuel, String type, String color) {
         super(name);
         this.type = type;
+        this.color = color;
         this.gears = gears;
         this.doors = doors;
         this.isManuel = isManuel;
@@ -42,7 +44,13 @@ public class Car extends Vecihle{
     public void setType(String type) {
         this.type = type;
     }
+    public String getColor() {
+        return color;
+    }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
     public int getDoors() {
         return doors;
     }

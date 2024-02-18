@@ -1,7 +1,7 @@
 public class SUV extends Car{
 
-    public SUV(String name, boolean isManuel) {
-        super(name, 4, 4, 6, isManuel, "SUV");
+    public SUV(String name, boolean isManuel, String Color) {
+        super(name, 4, 4, 6, isManuel, "SUV", Color);
     }
 
     public void accelerate(int rate) {
